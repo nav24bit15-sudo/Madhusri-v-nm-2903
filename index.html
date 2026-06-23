@@ -1,0 +1,36 @@
+<div className="container">
+      <h1>Workshop Registration</h1>
+
+      
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter Name"
+            onChange={handleChange}
+            required
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Email"
+            onChange={handleChange}
+            required
+          />
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Enter Phone Number"
+            onChange={handleChange}
+            required
+          />
+
+          <select
+            name="workshop"
+            onChange={handleChange}
+            required
+          >
+            <option value="">Select Workshop</option>
+            <option value="React">React</option>
